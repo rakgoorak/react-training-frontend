@@ -12,6 +12,7 @@ import Map from "../pages/DashboardMapPopulation"
 import ExportCsv from "../pages/ExportCsv/ExportCsv"
 import DatePickers from "../pages/DatePicker/DatePicker";
 import Calender from "../pages/caletder/Calender";
+import MockNotifications from "../pages/MockNotifications";
 
 function Router() {
   return (
@@ -105,15 +106,23 @@ function Router() {
             <DatePickers />
           </LayoutV2>
         }
-      /> 
+      />
       <Route
-      path="/Calender"
-      element={
-        <LayoutV2>
-          <Calender />
-        </LayoutV2>
-      }
-    />
+        path="/Calender"
+        element={
+          <LayoutV2>
+            <Calender />
+          </LayoutV2>
+        }
+      />
+      <Route
+        path="/Notification"
+        element={
+          <LayoutV2>
+            <MockNotifications />
+          </LayoutV2>
+        }
+      />
       <Route path="*" element={<NoMatch404 />} />
       {/* </Route> */}
     </Routes>

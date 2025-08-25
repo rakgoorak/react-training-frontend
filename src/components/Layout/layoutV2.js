@@ -40,6 +40,9 @@ function LayoutV2({ children }) {
           <div className="navbar-menu-item">
             <Link to={"/Calender"}>Calender</Link>
           </div>
+          <div className="navbar-menu-item">
+            <Link to={"/Notification"}>Notification</Link>
+          </div>
         </div>
       </nav>
       {children}
