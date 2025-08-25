@@ -11,7 +11,7 @@ import Product from "../pages/Product/product";
 import AutoComplete from "../pages/AutoCompleteV2/AutoComplete";
 import Map from "../pages/DashboardMapPopulation"
 import ExportCsv from "../pages/ExportCsv/ExportCsv"
-import DatePickers from "../pages/DatePicker/DatePicker";
+// import DatePickers from "../pages/DatePicker/DatePicker";
 import Calender from "../pages/caletder/Calender";
 import MockNotifications from "../pages/MockNotifications";
 import Copyright from "../pages/Coryright/Coryright";
@@ -102,14 +102,14 @@ function Router() {
           </LayoutV2>
         }
       />
-      <Route
+      {/* <Route
         path="/DatePicker"
         element={
           <LayoutV2>
             <DatePickers />
           </LayoutV2>
         }
-      />
+      /> */}
       <Route
         path="/Calender"
         element={

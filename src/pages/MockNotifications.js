@@ -1,10 +1,10 @@
 import { Button } from '@mui/material';
 import React, { useState } from 'react';
+import { GlassNotification } from '../components/Notifications/GlassNotification';
+import { GradientNotification } from '../components/Notifications/GradientNotification';
 import { FloatingNotification } from '../components/Notifications/FloatingNotification';
-import GlassNotification from '../components/Notifications/GlassNotification';
-import GradientNotification from '../components/Notifications/GradientNotification';
-import NeumorphismNotification from '../components/Notifications/NeumorphismNotification';
-import MinimalNotification from '../components/Notifications/MinimalNotification';
+import { NeumorphismNotification } from '../components/Notifications/NeumorphismNotification';
+import { MinimalNotification } from '../components/Notifications/MinimalNotification';
 
 function MockNotifications() {
     const [notifications, setNotifications] = useState([]);
