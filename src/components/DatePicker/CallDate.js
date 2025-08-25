@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { TextField } from "@mui/material";
 
 import moment from "moment";
 import DateTest from "./DateTest";
@@ -11,15 +12,16 @@ export default function CallDate() {
 
     return (
         <>
-                <MuiPickersUtilsProvider utils={DateTest} locale="th">
-                    <DatePicker
-                        views={["year", "month", "date"]}
-                        format="DD-MM-YYYY"
-                        value={selectedDate}
-                        onChange={handleDateChange}
-                    />
-                </MuiPickersUtilsProvider>
-            <p>1. output form datepicker Public :: {selectedDate.format('DD/MM/YYYY')}</p>
+            <MuiPickersUtilsProvider utils={DateTest} locale="th">
+                <DatePicker
+                    wrapperClassName="datePicker"
+                    views={["year", "month", "date"]}
+                    format="DD MMM YYYY"
+                    value={selectedDate}
+                    onChange={handleDateChange}
+                />
+            </MuiPickersUtilsProvider>
+            <p>1. output form datepicker Public :: {selectedDate.format('DD/MMMM/YYYY')}</p>
             <p>2. output form datepicker TH :: {moment(selectedDate).add(543, 'year').format('DD/MM/YYYY')}</p>
         </>
     );

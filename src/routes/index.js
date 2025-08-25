@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
-import { Home } from "../pages/Home";
+// import { Home } from "../pages/Home";
+import Home from "../components/Home/Home";
 import NoMatch404 from "../pages/NotFound";
 import Login from "../pages/Login";
 import AboutEffect from "../pages/AboutEffect";
@@ -12,6 +13,8 @@ import Map from "../pages/DashboardMapPopulation"
 import ExportCsv from "../pages/ExportCsv/ExportCsv"
 import DatePickers from "../pages/DatePicker/DatePicker";
 import Calender from "../pages/caletder/Calender";
+import Copyright from "../pages/Coryright/Coryright";
+import AutoCompleteMap from "../pages/AutoCompleteMap/AutoCompleteMap";
 
 function Router() {
   return (
@@ -105,15 +108,31 @@ function Router() {
             <DatePickers />
           </LayoutV2>
         }
-      /> 
+      />
       <Route
-      path="/Calender"
-      element={
-        <LayoutV2>
-          <Calender />
-        </LayoutV2>
-      }
-    />
+        path="/Calender"
+        element={
+          <LayoutV2>
+            <Calender />
+          </LayoutV2>
+        }
+      />
+      <Route
+        path="/Copyright"
+        element={
+          <LayoutV2>
+            <Copyright />
+          </LayoutV2>
+        }
+      />
+      <Route
+        path="/AutoCompleteMap"
+        element={
+          <LayoutV2>
+            <AutoCompleteMap />
+          </LayoutV2>
+        }
+      />
       <Route path="*" element={<NoMatch404 />} />
       {/* </Route> */}
     </Routes>

@@ -30,6 +30,7 @@
     "react-csv": "^2.2.2",
     "react-datepicker": "^7.6.0",
     "react-dom": "^18.2.0",
+    "react-google-recaptcha": "^3.1.0",
     "react-leaflet": "^4.2.1",
     "react-leaflet-cluster": "^2.1.0",
     "react-make-csv": "^0.0.1",
